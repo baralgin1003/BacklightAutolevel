@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        getSupportActionBar().setTitle("АВТОМАТИЧЕСКОЕ ИЗМЕНЕНИЕ ЯРКОСТИ ПОДСВЕТКИ");
+        getSupportActionBar().setTitle(R.string.mainActTitle);
 
         minBrEt = findViewById(R.id.minBr);
         maxBrEt = findViewById(R.id.maxBr);

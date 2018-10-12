@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="30dp"
-        android:text="Минимальная яркость"
+        android:text="@string/min_bright"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
-        android:text="Максимальная яркость"
+        android:text="@string/max_bright"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
-        android:text="Период начала регулировки\nдо наступления события, мин"
+        android:text="@string/period_start"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
-        android:text="Периодичность проверки, мин"
+        android:text="@string/period_check"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -108,7 +108,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
-        android:text="Сегодня"
+        android:text="@string/today"
         android:textColor="#fff"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -121,7 +121,7 @@
         android:id="@+id/tsd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Рассвет"
+        android:text="@string/sunr"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -140,7 +140,7 @@
         android:id="@+id/iog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Закат"
+        android:text="@string/suns"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="@+id/tsd"
         app:layout_constraintTop_toBottomOf="@+id/tsd" />
@@ -161,7 +161,7 @@
         android:layout_marginTop="8dp"
         android:buttonTint="#fff"
         android:checked="false"
-        android:text="Гражданский"
+        android:text="@string/civil"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="@+id/type_astro"
         app:layout_constraintTop_toBottomOf="@+id/type_astro" />
@@ -173,7 +173,7 @@
         android:layout_marginTop="10dp"
         android:buttonTint="#fff"
         android:checked="true"
-        android:text="Астрономический"
+        android:text="@string/astro"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="@+id/lmggjk"
         app:layout_constraintTop_toBottomOf="@+id/lmggjk" />
@@ -185,7 +185,7 @@
         android:layout_marginTop="8dp"
         android:buttonTint="#fff"
         android:checked="false"
-        android:text="Навигационный"
+        android:text="@string/navi"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="@+id/type_civil"
         app:layout_constraintTop_toBottomOf="@+id/type_civil" />
@@ -197,7 +197,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
         android:buttonTint="#fff"
-        android:text="Активировать сервис"
+        android:text="@string/acti"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -210,7 +210,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
-        android:text="Тип рассвета/заката"
+        android:text="@string/type"
         android:textColor="#fff"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -225,7 +225,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:layout_marginStart="20dp"
-        android:text="Применить"
+        android:text="@string/apply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -235,7 +235,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Выход"
+        android:text="@string/exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -246,7 +246,7 @@
         android:layout_marginStart="8dp"
         android:autoLink="email"
         android:gravity="center"
-        android:text="Вопросы можно сыпать\nна почту baralgin1003@yandex.ru"
+        android:text="@string/info"
         android:textColor="#fff"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/btn_apply"

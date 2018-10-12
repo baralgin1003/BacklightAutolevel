@@ -1,5 +1,6 @@
 package com.microntek.romavaleev.backlightautolevel;
 
+import android.Manifest;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -9,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.location.GpsSatellite;
 import android.location.GpsStatus;
 import android.location.Location;
@@ -18,6 +20,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
@@ -132,11 +135,11 @@ public class BacklightService extends Service {
                     .setContentText("").build();
 
             startForeground(1, notification);
-        }else{
+        } else {
             startForeground(0, prepareNotification());
         }
 
-      //
+        //
     }
 
     @Override
@@ -148,7 +151,7 @@ public class BacklightService extends Service {
 
         configureTimer();
 
-     //   registerReceiver();
+        //   registerReceiver();
 
         return START_NOT_STICKY;
     }
@@ -221,6 +224,10 @@ public class BacklightService extends Service {
                 @Override
                 public void onGpsStatusChanged(int event) {
                     if (event == GpsStatus.GPS_EVENT_SATELLITE_STATUS || event == GpsStatus.GPS_EVENT_FIRST_FIX) {
+                        if (ActivityCompat.checkSelfPermission(BaseApp.instance, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                            return;
+                        }
+
                         GpsStatus status = locationManager.getGpsStatus(null);
                         Iterable<GpsSatellite> sats = status.getSatellites();
                         // Check number of satellites in list to determine fix state

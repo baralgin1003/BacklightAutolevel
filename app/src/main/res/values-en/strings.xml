@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Backlight autolevel</string>
+    <string name="mainActTitle">BACKLIGHT AUTOLEVEL FOR PX5</string>
+    <string name="min_bright">Min bright value</string>
+    <string name="max_bright">Max bright value</string>
+    <string name="period_start">Start period before event, min</string>
+    <string name="period_check">Check period, min</string>
+    <string name="today">Today</string>
+    <string name="sunr">Sunrise</string>
+    <string name="suns">Sunset</string>
+    <string name="civil">Civil</string>
+    <string name="astro">Astronomic</string>
+    <string name="navi">Navigation</string>
+    <string name="acti">Start service</string>
+    <string name="type">Sunrise/sunset type</string>
+    <string name="apply">Apply</string>
+    <string name="exit">Exit</string>
+    <string name="info">Support e-mail baralgin1003@yandex.ru</string>
+</resources>
