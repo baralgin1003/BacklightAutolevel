@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Backlight autolevel</string>
+    <string name="mainActTitle">АВТОМАТИЧЕСКОЕ ИЗМЕНЕНИЕ ЯРКОСТИ ПОДСВЕТКИ</string>
+    <string name="min_bright">Минимальная яркость</string>
+    <string name="max_bright">Максимальная яркость</string>
+    <string name="period_start">Период начала регулировки\nдо наступления события, мин</string>
+    <string name="period_check">Периодичность проверки, мин</string>
+    <string name="today">Сегодня</string>
+    <string name="sunr">Рассвет</string>
+    <string name="suns">Закат</string>
+    <string name="civil">Гражданский</string>
+    <string name="astro">Астрономический</string>
+    <string name="navi">Навигационный</string>
+    <string name="acti">Активировать сервис</string>
+    <string name="type">Тип рассвета/заката</string>
+    <string name="apply">Применить</string>
+    <string name="exit">Выход</string>
+    <string name="info">Вопросы можно сыпать на почту baralgin1003@yandex.ru</string>
+</resources>
